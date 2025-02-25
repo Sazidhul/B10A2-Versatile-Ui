@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+   font-family: "Inter", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+ }
+ .page-background{
+   background-color: black;
+ }
+
+ /* shared styles */
+ .display-flex{
+   display: flex;
+ }
+ .text-withe{
+   color: #FFFFFF;
+ }
+ .bg-light{
+   background-color: rgba(17, 17, 17, 1);
+ }
+ .fitness-color{
+   color: #E6533C;
+ }
+ .btn-primary{
+  background-color: #E6533C;
+
+ }
+ .text-size{
+  font-weight: 600;
+  font-size: 2.5rem;
+ }
+ .description{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+ }
+ .habits{
+  font-weight: 600;
+ }
+ /*------- shared styles -------- */
+ /* header styles */
+
+ /* navbar related styles */
+
+ .navbar{
+     justify-content: space-between;
+     align-items: center;
+ }
+ .nav-item{
+   list-style: none;
+   margin-right: 45px;
+ }
+
+ .nav-link{
+   text-decoration: none;
+ }
+ .navbar, .banner{
+   max-width: 1440px;
+   margin: 0 auto;
+ 
+ }
+ .brand{
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: italic;
+ }
+ .btn-home{
+  width: 91px;
+  height: 35px;
+  border-radius: 45px;
+  border: 0px;
+
+ }
+ /* banner related styles */
+ .banner{
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  
+ }
+
+ .banner-content{
+  max-width: 600px;  
+ }
+.banner-title{
+  font-size: 4rem;
+}
+ .btn-join{
+  width: 200px;
+  height: 50px;
+  padding: 10px 35px;
+  border-radius: 42px;
+  border: 0px;
+ }
+ .btn-down{
+  width: 200px;
+  height: 50px;
+  padding: 10px 35px;
+  border-radius: 42px;
+  border-color: #FFFFFF;
+  background-color: black;
+ }
+ .banner-image{
+  width: 345px;
+  height: 580px;
+ }
+ .join-btn{
+  gap: 14px;
+ }
+ #experience-badge{
+  padding: 45px 42px;
+  margin-right: 1000px;
+
+ }
+ #experience-year{
+  font-size: 1rem;
+  font-weight: 600;
+ }
+
+ /* Main section  */
+ main{
+  max-width: 1440px;
+  margin: 0 auto;
+ }
+
+ 
+ /* Habits section  */
+ .habits{
+  text-align: center;
+ 
+ }
+ .habit-section{
+  padding: 0px 185px;
+ }
+ /* images skills */
+ .skill-image{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+  
+ }
+
+
+
+/* Responsive Styles */
+
+@media screen and (max-width:576px) {
+  .nav-item{
+    display: none;
+  }
+  .banner{
+    flex-direction: column;
+  }
+  .join-btn{
+    display: flex;
+    gap: 14px;
+  }
+  .btn-join, .btn-down{
+    width: 100%;
+  }
+}
