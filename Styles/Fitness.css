@@ -8,7 +8,7 @@
    font-style: normal;
  }
  .page-background{
-   background-color: black;
+    background-color: black; 
  }
 
  /* shared styles */
@@ -121,28 +121,81 @@
 
  /* Main section  */
  main{
+  
   max-width: 1440px;
   margin: 0 auto;
  }
-
+/* ----------------------Section ------------------- */
  
  /* Habits section  */
+ section{
+  margin-top: 100px;
+ }
  .habits{
   text-align: center;
- 
+  
  }
  .habit-section{
   padding: 0px 185px;
  }
+ /* Run section  */
+ .run-section{
+  background-color: #222222;
+  border-radius: 30px;
+ }
+ .run{
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+  
+ }
+ .run-content{
+  max-width: 440px;
+  padding: 40px 54px;
+ }
+ 
+ .run-image{
+  width: 365px;
+  padding: 30px;
+  border-radius: 40px;
+  object-fit: cover;
+  overflow: hidden;
+ }
+
  /* images skills */
- .skill-image{
+ /* .skill-image{
  display: grid;
  grid-template-columns: repeat(4, 1fr);
   
+ } */
+ .skill-image{
+  gap: 40px;
+  margin-top: 58px;
  }
+  .main-img{
+    border-radius: 50%;
+  }
 
+  /* BMI Calculator section */
 
+    .bmi-header{
+      max-width: 670px;
+      margin: 0 auto;
 
+    }
+    .bmi-h2{
+
+    }
+              /* -----------table section -------- */
+    table{
+      border-collapse: collapse;
+    }
+    td, th{
+      border: 0.1px solid #FFFFFF;
+      padding: 13px 18px ;
+      color: rgba(255, 255, 255, 0.5);
+    }
+   
 /* Responsive Styles */
 
 @media screen and (max-width:576px) {
@@ -158,5 +211,22 @@
   }
   .btn-join, .btn-down{
     width: 100%;
+  }
+  /* habit section  */
+  .habit-section{
+    padding: 0px;
+  }
+  .skill-image  {
+   flex-direction: column;
+
+  }
+  /* run */
+  .run{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .run-image{
+    align-items: center;
+    width: 287px;
   }
 }
